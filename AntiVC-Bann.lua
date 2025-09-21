@@ -1,5 +1,4 @@
--- Sorin Anti-VC UI Script (komplett)
--- V2 mit Ladebalken, Discord-Fenster, Bounce-Effekt, Debounce, Schutz und Jumpscare bei mehrfacher Ausführung
+-- Sorin Anti-VC UI
 
 local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
@@ -166,7 +165,7 @@ task.delay(3, function()
 
     JoinBtn.MouseButton1Click:Connect(function()
         local success, err = pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Wyattluber/sorin-loader/refs/heads/full-GUI/sorin-loader.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Wyattluber/SorinLoader/refs/heads/main/anti-vc.lua"))()
         end)
 
         if success then
